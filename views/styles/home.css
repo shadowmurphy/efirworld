@@ -1,0 +1,214 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap');
+@import url('https://unpkg.com/@glidejs/glide@3.4.1/dist/css/glide.core.min.css');
+
+:root {
+    --dark-blue-color: #3A3262;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-image: url("../img/background.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+}
+
+.nav-bar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid var(--dark-blue-color);
+}
+
+.logotype {
+    width: 150px;
+    margin-left: 10px;
+    cursor: pointer;
+}
+
+ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    gap: 50px;
+    color: white;
+    height: 80px;
+}
+
+li {
+    margin: 0 20px;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    width: 6em;
+    background-color: none;
+    height: 100%;
+    cursor: pointer;
+    transition: all .3s ease;
+    border-bottom: 3px solid transparent;
+}
+
+li:hover {
+    background-color: #2C275E;
+    border-bottom: 3px solid #6E3FF8;
+}
+
+.goto-telegram {
+    font-family: inherit;
+    font-size: 20px;
+    background: linear-gradient(180deg, #6148D1 0%, #6334FB 100%);
+    margin-right: 10px;
+    color: white;
+    padding: 0.7em 1em;
+    padding-left: 0.9em;
+    display: flex;
+    align-items: center;
+    border: none;
+    border-radius: 16px;
+    overflow: hidden;
+    transition: all 0.2s;
+    cursor: pointer;
+}
+
+.goto-telegram span {
+    display: block;
+    margin-left: 0.4em;
+    transition: all 0.3s ease-in-out;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+}
+
+.goto-telegram svg {
+    display: block;
+    transform-origin: center center;
+    transition: transform 0.3s ease-in-out;
+}
+
+.goto-telegram:hover .svg-wrapper {
+    animation: fly-1 0.6s ease-in-out infinite alternate;
+}
+
+.goto-telegram:hover svg {
+    transform: translateX(3.4em) rotate(45deg) scale(1.1);
+}
+
+.goto-telegram:hover span {
+    transform: translateX(8em);
+}
+
+.goto-telegram:active {
+    transform: scale(0.95);
+}
+
+@keyframes fly-1 {
+    from {
+        transform: translateY(0.1em);
+    }
+
+    to {
+        transform: translateY(-0.1em);
+    }
+}
+
+.hello-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    margin-top: 120px;
+    font-family: "Unbounded", sans-serif;
+    gap: 150px;
+}
+
+.hello {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.hello h1 {
+    font-size: 60px;
+    color: white;
+}
+
+.description {
+    color: #D2D2D2;
+    font-size: 17px;
+    max-width: 440px;
+    margin-bottom: 60px;
+}
+
+.monitoring {
+    display: flex;
+    align-items: center;
+    border-radius: 20px;
+    width: 460px;
+    height: 120px;
+    background-color: #6238F0;
+    gap: 20px;
+}
+
+.character {
+    width: 550px;
+}
+
+.circle {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    background-color: #2C275E;
+    margin-left: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.circle img {
+    width: 35px;
+    margin-left: 8px;
+}
+
+.server-name {
+    font-size: 17px;
+    color: white;
+}
+
+.server-name a {
+    font-size: 15px;
+    color: #D2D2D2;
+}
+
+.players-count {
+    font-size: 15px;
+    color: #D2D2D2;
+}
+
+.players-count a {
+    color: #C2C2C2;
+}
+
+.progress-bar {
+    width: 300px;
+    height: 10px;
+    background-color: #2C275E;
+    margin-bottom: 20px;
+    border-radius: 333px
+}
+
+.progress {
+    width: 50%;
+    height: 100%;
+    background-color: #4B2CB7;
+    border-radius: 333px;
+}
